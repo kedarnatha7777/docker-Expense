@@ -1,4 +1,4 @@
-FROM Node:20
+FROM Node:20.0 
 RUN useradd expense 
 EXPOSE 8080
 RUN mkdir -p /opt/server 
