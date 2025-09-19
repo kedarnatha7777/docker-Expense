@@ -1,4 +1,4 @@
-FROM Node:20s
+FROM node:20
 RUN useradd expense 
 EXPOSE 8080
 RUN mkdir -p /opt/server 
@@ -7,4 +7,4 @@ WORKDIR /opt/server
 COPY package.json . 
 COPY *.js  .
 RUN npm install
-CMD [ "npm","/app/index.js" ]
+CMD [ "npm","index.js" ]
